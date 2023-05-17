@@ -87,9 +87,8 @@ def send_Whats(query, periodo):
             message = client.messages \
                             .create(          
                                     body=f'Olá, {user}! O pedido de compra {i} está pendente de aprovação há {periodo} dias',
-                                    from_='whatsapp:+552732056730',
-                                    #to=f'whatsapp:+55{dicionario[user]}',
-                                    to=f'whatsapp:+552732056733',    
+                                    from_='whatsapp:+5527#seuNumero',
+                                    to=f'whatsapp:+55{dicionario[user]}'    
                                 )
         print(f'Mensagem enviada para {user} com os pedidos {numero}')
         user_cont += 1
